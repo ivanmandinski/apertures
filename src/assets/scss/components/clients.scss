@@ -1,0 +1,62 @@
+
+.clients_slide_wrapper{
+    border-top: 1px solid #b0b6b7;
+    border-bottom: 1px solid #b0b6b7;
+    padding: 45px 0;
+    margin-bottom: 60px;
+}
+.clients_slide img{
+    width: 180px;
+    height: 50px;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.clients_slider{
+    text-align: center;
+    padding: 0 50px;
+
+    .slick-prev {
+        left: -50px;
+    }
+
+    .slick-next {
+        right: -50px;
+    }
+
+    .slick-prev:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(https://h7n5wh0o0syqik1oykwvjpkdg.js.wpenginepowered.com/assets/arrow_left_gray.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: .75;
+        width: 13px;
+        height: 26px;
+    }
+    .slick-prev:hover:before{
+        opacity: 1;
+    }
+
+    .slick-next:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(https://h7n5wh0o0syqik1oykwvjpkdg.js.wpenginepowered.com/assets/arrow_right_gray.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: .75;
+        width: 13px;
+        height: 26px;
+    }
+    .slick-next:hover:before{
+        opacity: 1;
+    }
+
+}

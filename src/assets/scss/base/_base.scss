@@ -1,0 +1,304 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+/*
+:root {
+    --worpdress-base-url: 'https://aperturesdata.wpengine.com';
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "OpenSans-Regular", sans-serif;
+    //font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+html {}
+
+body {
+    overflow-x: hidden;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+h1,
+h2 {
+    font-size: 80px;
+    line-height: 90px;
+    // font-weight: 800;
+    font-family: 'OpenSans-ExtraBold', sans-serif;
+    color: #201a1a;
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+
+    span {
+        // font-weight: 800;
+        font-family: 'OpenSans-ExtraBold', sans-serif;
+        color: #ba0c2f;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 260px;
+        background-color: #535454;
+    }
+}
+
+h3 {
+    font-size: 42px;
+    // font-weight: 800;
+    font-family: 'OpenSans-ExtraBold', sans-serif;
+    color: #201a1a;
+    margin-bottom: 40px;
+
+    span {
+        // font-weight: 800;
+        font-family: 'OpenSans-ExtraBold', sans-serif;
+        color: #ba0c2f;
+    }
+}
+@media screen and (max-width: 575.98px) {
+
+    h1,
+    h2 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 25px;
+        padding-bottom: 18px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    h1,
+    h2 {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+h4 {
+    font-size: 26px;
+    // font-weight: 800;
+    font-family: 'OpenSans-ExtraBold', sans-serif;
+    color: #201a1a;
+    margin-bottom: 30px;
+
+    span {
+        // font-weight: 800;
+        font-family: 'OpenSans-ExtraBold', sans-serif;
+        color: #ba0c2f;
+    }
+}
+
+h5 {
+    font-size: 22px;
+    // font-weight: 800;
+    font-family: 'OpenSans-ExtraBold', sans-serif;
+    color: #201a1a;
+    margin-bottom: 25px;
+
+    span {
+        // font-weight: 800;
+        font-family: 'OpenSans-ExtraBold', sans-serif;
+        color: #ba0c2f;
+    }
+}
+
+h6 {
+    // font-weight: 800;
+    font-family: 'OpenSans-ExtraBold', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #969696;
+}
+
+p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #535454;
+
+    a {
+        color: #ba0c2f;
+
+        &:hover {
+            color: #ba0c2f;
+        }
+    }
+}
+
+ul {
+    li {
+        font-size: 20px;
+        color: #535454;
+        line-height: 32px;
+    }
+}
+
+
+.quote_text {
+    position: relative;
+    border-top: 20px solid #ba0c2f;
+    border-bottom: 20px solid #ba0c2f;
+    background-color: #880109;
+    padding: 50px 35px;
+    font-size: 28px;
+    line-height: 50px;
+    color: #fff;
+    // font-weight: 300;
+
+    &:after {
+        content: '';
+        position: absolute;
+        //background-image: url(./quote_icon.svg);
+        background-size: contain;
+        background-position: center;
+        top: -20px;
+        left: 35px;
+        width: 53px;
+        height: 48px;
+    }
+}
+
+.primary_btn {
+    background-color: #ba0c2f !important;
+    font-size: 20px;
+    // font-weight: 800;
+    font-family: 'OpenSans-ExtraBold', sans-serif;
+    color: #fff !important;
+    border: none;
+    padding: 12px 12px;
+    width: 100%;
+    max-width: 230px;
+    border-radius: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.gap_30 {
+    gap: 30px;
+}
+
+@media screen and (max-width: 575.98px) {
+    h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    ul {
+        li {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    ul {
+        li {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+
+    h1,
+    h2 {
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.96px) {}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.96px) {}
+
+@media screen and (max-width: 991.98px) {}
+
+/*
+@media screen and (max-width: 575.98px) {}
+@media screen and (max-width: 767.98px) {}
+@media screen and (max-width: 991.98px) {}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {}
+@media screen and (min-width: 992px) and (max-width: 1199.96px) {}
+@media screen and (min-width: 1200px) and (max-width: 1399.96px) {}
+*/

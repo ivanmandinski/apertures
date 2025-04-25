@@ -1,0 +1,45 @@
+.gallerySection {
+    margin-bottom: 40px;
+
+    .filter_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+
+        li {
+            display: inline-block;
+            margin-right: 25px;
+            margin-bottom: 15px;
+            color: #000;
+            text-transform: capitalize;
+            cursor: pointer;
+
+            strong {
+                // font-weight: 700;
+                font-family: 'OpenSans-Semibold', sans-serif;
+            }
+
+            &:hover {
+                color: #ba0c2f;
+            }
+        }
+    }
+
+    .gallery_container {
+        width: 100%;
+        columns: 3;
+        column-gap: 15px;
+
+        img {
+            width: 100%;
+            margin-bottom: 15px;
+            transition: all 0.4s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

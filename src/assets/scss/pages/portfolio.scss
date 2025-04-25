@@ -1,0 +1,255 @@
+.scope_item {
+    ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+
+            &:before {
+                content: "»";
+                position: absolute;
+                left: 0;
+                top: 0;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.videobox {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 99;
+        background-image: url(https://aperturesdata.wpengine.com/wp-content/uploads/2024/03/play.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100px;
+        width: 100px;
+        margin-left: -50px;
+        margin-top: -50px;
+        cursor: pointer;
+    }
+}
+
+
+.lightboxWrapper {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    padding: 15px;
+
+    .lightbox_close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .photo_slider {
+        text-align: center;
+        padding: 0 30px;
+        position: relative;
+        margin-bottom: 15px;
+
+        img.photo_slider_images {
+            width: auto;
+            height: auto;
+            max-height: calc(100vh - 180px);
+            margin: 0 auto;
+            margin-bottom: 5px;
+        }
+
+        .photo_slider_title {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #fff;
+            line-height: normal;
+        }
+
+        .slick-slide div {
+            outline: none !important;
+        }
+    }
+
+    .nav_slider {
+        text-align: center;
+        padding: 0 30px;
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        img.nav_slider_images {
+            width: auto;
+            height: 100px;
+            margin: 0 auto;
+            padding: 0 10px;
+            cursor: pointer;
+            //border: 2px solid transparent;
+            opacity: 0.65;
+            transition: all 0.4s;
+
+            &:hover {
+                //border: 2px solid #ba0c2f;
+                opacity: 1;
+            }
+        }
+
+        .slick-slide.slick-active.slick-center.slick-current img {
+            //border: 2px solid #fff;
+            opacity: 1;
+        }
+
+        .slick-slide div {
+            outline: none !important;
+        }
+
+        .slick-prev,
+        .slick-next {
+            width: 40px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .slick-prev {
+            left: -50px;
+        }
+
+        .slick-next {
+            right: -50px;
+        }
+
+        .slick-prev:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(https://aperturesdata.wpengine.com/wp-content/uploads/2023/01/arrow_left.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: .75;
+            width: 40px;
+            height: 50px;
+        }
+
+
+        .slick-prev:hover:before {
+            opacity: 1;
+        }
+
+        .slick-next:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(https://aperturesdata.wpengine.com/wp-content/uploads/2023/01/arrow_right.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: .75;
+            width: 40px;
+            height: 50px;
+        }
+
+        .slick-next:hover:before {
+            opacity: 1;
+        }
+    }
+
+    .videobox {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 99;
+            background-image: url(https://aperturesdata.wpengine.com/wp-content/uploads/2024/03/play.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100px;
+            width: 100px;
+            margin-left: -50px;
+            margin-top: -50px;
+            cursor: pointer;
+        }
+    }
+}
+
+.lightBox {
+
+    .mylightbox {
+        display: none;
+    }
+
+    .mylightbox.showLightbox {
+        display: block;
+    }
+
+
+    .embed_code {
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+.videoLightBox {
+    .myVideoLightBox {
+        display: none;
+    }
+
+    .myVideoLightBox.showVideoLightbox {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 9999;
+        height: 100%;
+        color: #fff;
+        padding: 15px;
+    }
+
+    .lightbox_close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 99999;
+    }
+
+    .embed_code {
+        padding: 0 30px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        iframe {
+            max-width: 900px;
+            width: 100%;
+            /* height: 500px; */
+            height: 100%;
+        }
+    }
+}

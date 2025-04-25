@@ -1,0 +1,50 @@
+{
+  "name": "apertures",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.4",
+    "react-router-dom": "^6.4.5",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
+    "sass": "^1.71.1",
+    "serve": "^14.2.1",
+    "slick-carousel": "^1.8.1",
+    "use-react-router-breadcrumbs": "^4.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "source-map-explorer": "^2.5.3"
+  }
+}

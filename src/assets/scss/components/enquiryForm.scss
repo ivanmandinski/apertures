@@ -1,0 +1,99 @@
+.field_text_wrapper {
+    margin-bottom: 30px;
+}
+
+input.field_text {
+    border: 1px solid #969696;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    // font-weight: 700;
+    font-family: 'OpenSans-Semibold', sans-serif;
+    border-radius: 0px;
+    color: #767676;
+}
+
+textarea.field_text {
+    border: 1px solid #535454;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    // font-weight: 700;
+    font-family: 'OpenSans-Semibold', sans-serif;
+    color: #767676;
+    border-radius: 0px;
+
+}
+
+select.field_text {
+    border: 1px solid #535454;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    // font-weight: 700;
+    font-family: 'OpenSans-Semibold', sans-serif;
+    color: #767676;
+    border-radius: 0px;
+
+    option {
+        //color: #ccc;
+    }
+}
+
+.field_text::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #767676;
+    opacity: 1;
+}
+
+.field_text::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #767676;
+    opacity: 1;
+}
+
+.field_text:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #767676;
+    opacity: 1;
+}
+
+.field_text:-moz-placeholder {
+    /* Firefox 18- */
+    color: #767676;
+    opacity: 1;
+}
+
+.field_submit {
+    background-color: #ba0c2f !important;
+    font-size: 20px;
+    // font-weight: 700;
+    font-family: 'OpenSans-Semibold', sans-serif;
+    color: #fff !important;
+    border: none;
+    padding: 12px 12px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.validation_error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+
+.successmsg {
+    color: #fff;
+    background-color: #16a716;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 50px;
+    // font-weight: 600;
+    font-size: 22px;
+}

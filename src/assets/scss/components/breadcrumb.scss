@@ -1,0 +1,35 @@
+.breadcrumb_wrapper {
+    text-align: right;
+
+    a {
+        font-size: 14px;
+        position: relative;
+        margin-right: 10px;
+        color: #969696;
+        text-transform: capitalize;
+
+        &:hover {
+            color: #ba0c2f;
+        }
+
+        &:after {
+            content: "/";
+            margin-left: 10px;
+        }
+
+        &:last-child {
+            color: #535454;
+            padding-right: 0px;
+            margin-right: 0px;
+
+            &:after {
+                display: none;
+                margin-left: 0;
+            }
+
+            &:hover {
+                color: #ba0c2f;
+            }
+        }
+    }
+}

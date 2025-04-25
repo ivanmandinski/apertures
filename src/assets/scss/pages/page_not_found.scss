@@ -1,0 +1,32 @@
+
+.page_not_found{
+    margin-bottom: 100px;
+    text-align: center;
+    h3 {
+        font-size: 300px;
+        margin-bottom: 0;
+    }
+}
+
+
+    @media screen and (max-width: 575.98px) {
+        .page_not_found{
+            h3 {
+                font-size: 100px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 767.98px) {}
+    @media screen and (max-width: 991.98px) {}
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        .page_not_found{
+            h3 {
+            font-size: 200px;
+            margin-bottom: 0;
+        }  
+    }
+    }
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {}
+    @media screen and (min-width: 992px) and (max-width: 1199.96px) {}
+    @media screen and (min-width: 1200px) and (max-width: 1399.96px) {}
