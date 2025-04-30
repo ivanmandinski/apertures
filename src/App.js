@@ -73,7 +73,6 @@ function App() {
 							<Route exact path="/branding-cases/:brandingslug" element={<BrandingCasesDetail />} />
 							<Route exact path="/lets-connect" element={<Contact />}></Route>
 							<Route exact path="/about-apertures" element={<About />}></Route>
-							<Route exact path="/motion-moves-audiences" element={<MotionApertures />}></Route>
 							<Route path="*" element={<Error />}></Route>
 							<Route exact path="/:pageslug" element={<Content />}></Route>
 						</Routes>
